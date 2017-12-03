@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8852D1451FD35BB200F2D5AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F718CB1FD357CE00D70EFA /* ViewController.swift */; };
+		8868650C1FD41AF6008ECAFA /* SafeAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868650B1FD41AF6008ECAFA /* SafeAreaViewController.swift */; };
 		8898A4B71FD35B4A00DFAC15 /* Views.h in Headers */ = {isa = PBXBuildFile; fileRef = 8898A4B51FD35B4A00DFAC15 /* Views.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88F718CA1FD357CE00D70EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F718C91FD357CE00D70EFA /* AppDelegate.swift */; };
 		88F718D11FD357CE00D70EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F718D01FD357CE00D70EFA /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8868650B1FD41AF6008ECAFA /* SafeAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaViewController.swift; sourceTree = "<group>"; };
 		8898A4B31FD35B4A00DFAC15 /* Views.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Views.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8898A4B51FD35B4A00DFAC15 /* Views.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Views.h; sourceTree = "<group>"; };
 		8898A4B61FD35B4A00DFAC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				88F718CB1FD357CE00D70EFA /* ViewController.swift */,
+				8868650B1FD41AF6008ECAFA /* SafeAreaViewController.swift */,
 				8898A4B51FD35B4A00DFAC15 /* Views.h */,
 				8898A4B61FD35B4A00DFAC15 /* Info.plist */,
 			);
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8868650C1FD41AF6008ECAFA /* SafeAreaViewController.swift in Sources */,
 				8852D1451FD35BB200F2D5AF /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
