@@ -1,5 +1,6 @@
 import UIKit
 import PlaygroundSupport
+import Views
 
 public enum Device {
     case iphone_5    // 5, 5s, 5c, SE
@@ -132,8 +133,6 @@ public func show(viewController: UIViewController,
     container.addChildViewController(viewController)
     container.view.addSubview(viewController.view)
 
-    viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-
     let frame = CGRect(origin: .zero, size: size)
     container.view.frame = frame
     viewController.view.frame = frame
@@ -144,6 +143,11 @@ public func show(viewController: UIViewController,
         .init(verticalSizeClass: verticalSizeClass),
         .init(userInterfaceIdiom: userInterfaceIdiom)])
     container.setOverrideTraitCollection(traits, forChildViewController: viewController)
+
+    let safeAreaViewController = SafeAreaViewController()
+    container.addChildViewController(safeAreaViewController)
+    container.view.addSubview(safeAreaViewController.view)
+    safeAreaViewController.view.frame = frame
 
     PlaygroundPage.current.liveView = container
 }

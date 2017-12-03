@@ -2,9 +2,8 @@ import UIKit
 import PlaygroundSupport
 import Views
 
-let viewController = SafeAreaViewController()
-viewController.view.backgroundColor = .white
+let viewController = ViewController()
 
 show(viewController: viewController,
-     device: .iphone_x,
-     orientation: .landscape)
+     device: .iphone_5,
+     orientation: .portrait)

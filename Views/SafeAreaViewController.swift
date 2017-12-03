@@ -67,9 +67,4 @@ public class SafeAreaViewController : UIViewController {
         safeAreaView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         safeAreaView.backgroundColor = safeAreaColor
     }
-
-
-    public override func viewSafeAreaInsetsDidChange() {
-        print(view.safeAreaInsets)
-    }
 }
