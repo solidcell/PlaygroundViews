@@ -129,14 +129,15 @@ public func show(viewController: UIViewController,
         size = .init(width: height, height: width)
     }
 
+    let frame = CGRect(origin: .zero, size: size)
+
     let container = ContainerViewController(safeAreaInsets: safeAreaInsets)
+    container.view.frame = frame
+    container.preferredContentSize = frame.size
+
     container.addChildViewController(viewController)
     container.view.addSubview(viewController.view)
-
-    let frame = CGRect(origin: .zero, size: size)
-    container.view.frame = frame
     viewController.view.frame = frame
-    container.preferredContentSize = frame.size
 
     let traits = UITraitCollection(traitsFrom: [
         .init(horizontalSizeClass: horizontalSizeClass),
@@ -156,7 +157,8 @@ class ContainerViewController: UIViewController {
 
     init(safeAreaInsets: UIEdgeInsets) {
         super.init(nibName: nil, bundle: nil)
-        self.additionalSafeAreaInsets = safeAreaInsets
+//        self.additionalSafeAreaInsets = safeAreaInsets
+        self.additionalSafeAreaInsets = UIEdgeInsets(top: 10.0, left: 0.0, bottom: 10.0, right: 44.0)
     }
 
     public required init?(coder aDecoder: NSCoder) {
